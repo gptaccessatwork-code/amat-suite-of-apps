@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asa-amat-launcher"
+version = "1.0.0"
+description = "Internal launcher for the AMAT Suite of Apps"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "nicegui==3.15.0",
+]
+
+[project.scripts]
+asa-launcher = "asa_launcher.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["asa_launcher*"]
+
