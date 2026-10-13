@@ -13,6 +13,22 @@
       "url": "http://sg1wgm0nkfwa-1:8099/",
       "status": "available",
       "icon": "description"
+    },
+    {
+      "id": "amat_system_type_identifier",
+      "name": "AMAT System Type Identifier",
+      "description": "Identify AMAT system types and WD templates from system numbers or Excel workbooks.",
+      "url": "http://sg1wgm0nkfwa-1:8100/",
+      "status": "available",
+      "icon": "precision_manufacturing"
+    },
+    {
+      "id": "quote_scraper",
+      "name": "Excel Scraper for Quotes",
+      "description": "Find system types, quoted hours and notes in synced OneDrive quote workbooks.",
+      "url": "http://SG1WPF5LM0PD:8101/",
+      "status": "available",
+      "icon": "manage_search"
     }
   ]
 }

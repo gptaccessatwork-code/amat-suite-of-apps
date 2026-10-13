@@ -80,6 +80,19 @@ All routine deployment settings are in `launcher.json`:
 Changes require a launcher restart because production mode intentionally disables
 automatic reload.
 
+The checked-in registry also includes **Excel Scraper for Quotes**, hosted on the
+OneDrive PC at `http://SG1WPF5LM0PD:8101/`. Start that project's
+`Start-LAN-Server.ps1` separately; ASA opens it in a new tab and does not launch its
+server. If the quote host changes, update its URL in `launcher.json`. For an ASA
+deployment using a copied release, copy the updated registry and restart that
+launcher. The existing Delta BOM entry is preserved.
+
+**AMAT System Type Identifier** is registered at
+`http://sg1wgm0nkfwa-1:8100/`, assuming the same host as Delta BOM and the
+identifier's source default port. Confirm this URL against the deployed server:
+its deployment examples use port `8080`, which may be set through
+`AMAT_MATCHER_PORT` in `.env`. ASA does not start the identifier server.
+
 ### Add an application
 
 Add one object to the `applications` array. Supported statuses are:
