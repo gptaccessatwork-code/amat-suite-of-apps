@@ -29,6 +29,14 @@
       "url": "http://SG1WPF5LM0PD:8101/",
       "status": "available",
       "icon": "manage_search"
+    },
+    {
+      "id": "production_issues_tracker",
+      "name": "Production Issues Tracker (PIT)",
+      "description": "View, log and resolve engineering and material production issues, with admin-protected editing.",
+      "url": "http://sg1wgm0nkfwa-1:8102/",
+      "status": "available",
+      "icon": "assignment"
     }
   ]
 }

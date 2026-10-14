@@ -93,6 +93,13 @@ identifier's source default port. Confirm this URL against the deployed server:
 its deployment examples use port `8080`, which may be set through
 `AMAT_MATCHER_PORT` in `.env`. ASA does not start the identifier server.
 
+**Production Issues Tracker (PIT)** is registered as
+`production_issues_tracker` at `http://sg1wgm0nkfwa-1:8102/`.
+PIT runs independently; configure its `pit_settings.json` port as `8102` and
+start its `PIT Server.exe` on the hosting PC. ASA opens
+the tracker in a new tab, where PIT's own admin lock controls database editing.
+If the host or port changes, update this URL in `launcher.json` and restart ASA.
+
 ### Add an application
 
 Add one object to the `applications` array. Supported statuses are:
